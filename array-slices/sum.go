@@ -1,8 +1,7 @@
 package main
 
-var sum int
-
-func Sum(numbers [6]int) int {
+func Sum(numbers []int) int {
+	var sum int
 	for _, number := range numbers {
 		sum += number
 	}
