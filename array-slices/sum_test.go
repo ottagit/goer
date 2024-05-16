@@ -24,8 +24,8 @@ func TestSumAll(t *testing.T) {
 	slice1 := []int{1, 2}
 	slice2 := []int{0, 9}
 
-	got := SumAll(slice1, slice2)
-	want := []int{3, 9}
+	got := SumAllTails(slice1, slice2)
+	want := []int{2, 9}
 
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("got %v want %v", got, want)
